@@ -6,7 +6,7 @@ function MostrarAumento()
 {
 	var importe;	
 	var resultado;
-
+	var resto;
 
 
 	importe = document.getElementById('sueldo').value;
@@ -15,9 +15,9 @@ function MostrarAumento()
 
 
 	importe = parseInt(importe);
-	resultado = (importe % 10);
+	resultado = parseInt(resultado);
 
-	alert(resultado);
+	
 
 
 

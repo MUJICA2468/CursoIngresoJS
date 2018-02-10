@@ -22,7 +22,7 @@ y = parseInt(y);
 
 
 
-resultado = (x % y);
+resultado = x % y;
 
 alert(resultado);
 

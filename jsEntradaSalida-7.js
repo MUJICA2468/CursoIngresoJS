@@ -18,7 +18,7 @@ function sumar()
 	y = parseInt(y);
 
 
-	resultado = (x + y);
+	resultado = x + y;
 
 	
 
@@ -47,7 +47,7 @@ function restar()
 	x = parseInt(x);
 	y = parseInt(y);
 
-	resultado = (x - y);
+	resultado = x - y;
 
 
 
@@ -88,7 +88,7 @@ function multiplicar()
 	x = parseInt(x);
 	y = parseInt(y);
 
-	resultado = (x * y);
+	resultado = x * y;
 
 	alert(resultado);
 
@@ -121,7 +121,7 @@ var x;
 	x = parseInt(x);
 	y = parseInt(y);
 
-	resultado = (x / y);
+	resultado = x / y;
 
 
 
