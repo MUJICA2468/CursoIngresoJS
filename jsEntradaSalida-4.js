@@ -4,16 +4,6 @@
 */
 function Mostar()
 {
-
-	var nombre;
-	nombre = prompt("Ingrese su nombre");
-	document.getElementByid('elNombre').velue nombre;
 	
-
-
-
-
-
-
 }
 
