@@ -3,5 +3,17 @@ y luego mostrarlo por 'alert' al presionar el botón  'MOSTRAR'*/
 function Mostar()
 {
 	
+
+	var nombre;
+	nombre = prompt("Mi nombre es: ");
+	alert(nombre);
+	
+
+
+
+
+
+
+
 }
 

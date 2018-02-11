@@ -6,26 +6,22 @@ function SacarResto()
 {
 	
 
-var x;	
-var y;
-var resultado;
+	var x;
+	var y;
+	var resto;
 
 
-
-x = document.getElementById('numeroDividendo').value;
-y = document.getElementById('numeroDivisor').value;
-
+	x = document.getElementById('numeroDividendo').value;
+	y = document.getElementById('numeroDivisor').value;
 
 
-x = parseInt(x);
-y = parseInt(y);
+	x = parseInt(x);
+	y = parseInt(y);
 
 
+	resto = x%y;
 
-resultado = x % y;
-
-alert(resultado);
-
+	alert(resto);
 
 
 

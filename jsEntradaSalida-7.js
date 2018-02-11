@@ -8,37 +8,26 @@ function sumar()
 	var y;
 	var resultado;
 
-	
-	
+	x = document.getElementById('numeroUno').value;
+	y = document.getElementById('numeroDos').value;
 
-	x = document.getElementById("numeroUno").value;
-	y = document.getElementById("numeroDos").value;
 
 	x = parseInt(x);
 	y = parseInt(y);
-
-
-	resultado = x + y;
-
 	
 
-
-
-	alert(resultado);
-
-
-
+	resultado = x + y;
+	
+	alert("El resultado es: "+resultado);
 
 
 }
 
 function restar()
 {
-
 	var x;
 	var y;
 	var resultado;
-
 
 	x = document.getElementById('numeroUno').value;
 	y = document.getElementById('numeroDos').value;
@@ -46,40 +35,20 @@ function restar()
 
 	x = parseInt(x);
 	y = parseInt(y);
-
-	resultado = x - y;
-
-
-
-	alert(resultado);
-
 	
 
-
-
-
-
-
-
-
-
-
-
-
+	resultado = x - y;
+	
+	alert("El resultado es: "+resultado);
 
 
 }
 
 function multiplicar()
 { 
-	
-
-
-
-    var x;
+	var x;
 	var y;
 	var resultado;
-
 
 	x = document.getElementById('numeroUno').value;
 	y = document.getElementById('numeroDos').value;
@@ -87,32 +56,20 @@ function multiplicar()
 
 	x = parseInt(x);
 	y = parseInt(y);
+	
 
 	resultado = x * y;
-
-	alert(resultado);
-
-
-
-
+	
+	alert("El resultado es: "+resultado);
 
 
 }
 
 function dividir()
 {
-	
-
-
-
-
-
-
-
-var x;
+	var x;
 	var y;
 	var resultado;
-
 
 	x = document.getElementById('numeroUno').value;
 	y = document.getElementById('numeroDos').value;
@@ -120,24 +77,11 @@ var x;
 
 	x = parseInt(x);
 	y = parseInt(y);
-
-	resultado = x / y;
-
-
-
-	alert(resultado);
-
 	
 
-
-
-
-
-
-
-
-
-
+	resultado = x / y;
+	
+	alert("El resultado es: "+resultado);
 
 
 }
