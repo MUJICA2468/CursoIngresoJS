@@ -1,36 +1,24 @@
 function Mostrar()
 {
-
-
-
-
-
-var x;
-	
-	x = document.getElementById("edad").value;
 	
 
-  
+	var edad;
+	edad = document.getElementById('edad').value;
 
 
-	if(x>=13&&x<=18)
-	{
+		if(edad>=13&&edad<=18)
+		{
+
+			alert("Adolescente");
 
 
-	alert("adolescente");
+		}
+		else
+		{
 
-	}
- 	
- 	else
-	{
+			alert("No adolescente");
 
-		alert("NO adolescente");
-
-	}
-
-
-
-
+		}
 
 
 

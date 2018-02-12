@@ -1,31 +1,24 @@
 function Mostrar()
 {
 
-
-	var x;
-	
-	x = document.getElementById("edad").value;
-	
-
-  
+	var edad;
+	edad = document.getElementById('edad').value;
 
 
-	if(x>17)
-	{
+		if(edad>17)
+		{
+
+			alert("Mayor");
 
 
-	alert("mayor");
+		}
+			else
+			{
 
+				alert("Menor");
 
+			}
 
-	}
- 	
- 	else
-	{
-
-		alert("menor");
-
-	}
 
 
 }//FIN DE LA FUNCIÓN
