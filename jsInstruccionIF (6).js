@@ -1,34 +1,59 @@
 function Mostrar()
 {
 
+
+
 	var edad;
-	edad = document.getElementById('edad').value;
+
+	edad =document.getElementById('edad').value;
+
+	if(edad>18)
+	{
 
 
-		if(edad>=18)
-		{
-			
-			alert("Mayor de edad");
-			
-		}
-			
-		else
-		{
-			if(edad>=13&&edad<=17)
-			{
-
-				alert("adolescente");
+	}
+	else
+	{
+		if(edad)
 
 
-			}
-			else
-			{
+	}	
+	else
+	{
 
 
-				alert("Menor que 13");
 
-			}
-		
-		}
-			
-}//FIN DE LA FUNCIÓN
+	}		
+
+
+
+
+
+
+
+
+// ???
+
+/*	
+if(edad<13)
+	{
+
+		alert("Menor de edad");
+
+
+	}
+	if(edad>12&&edad<18)
+	{
+		alert("adolescente");
+
+
+	}
+	if(edad>17)
+	{
+
+		alert("Mayor de edad");
+
+	}
+*/
+
+}
