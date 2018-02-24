@@ -6,21 +6,27 @@ function Mostrar()
 	var respuesta='si';
 	var numero;
 
-	while(respuesta=="si") 
+	while(respuesta == "si")
 	{
-
-		numero = prompt("Ingrese un numero: ");
+		numero = prompt("Ingrese un numero");
 		numero = parseInt(numero);
-		contador = contador+1;
-		acumulador = acumulador+numero;
-		respuesta = prompt("¿Desea continuar?");			
 		
+		acumulador = acumulador+numero;
+		contador++;
+
+		while(numero<1 || numero>10)	
+		{
+
+		numero = prompt("¿Desea continuar?");
+		
+		
+
+
+		}
+
 	}	
-	
 
-	
-	
-
+		numero = prompt("¿Quiere continuar?")
 
 
 document.getElementById('suma').value=acumulador;

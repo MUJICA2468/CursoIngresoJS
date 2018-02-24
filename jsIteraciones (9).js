@@ -3,54 +3,54 @@ function Mostrar()
 
 	var contador=0;
 	// declarar variables
-	var maximo;
+	var maximo;      //valores opuestos
 	var minimo;
-	var respuesta='si';
 	var numero;
+	var respuesta='si';
 
 	while(respuesta!='no')
 	{
 		
-		numero = prompt("Ingrese un numero: ");
+		numero = prompt("Ingrese numeros: ")
 		numero = parseInt(numero);
 
-		respuesta = prompt("¿Quiere continuar?");
+		while(numero<1 || numero>10)
+		{
 
-	
-	}
-	if(contador==0)//<<No se sabe cùal es el numero maximo o minimo
-	{
 
-		contador = contador+1;
-		maximo = numero;
-		minimo = numero;
+			numero = prompr("Ingrese numero");
+			numero = parseInt(numero);
 
-	}	
-	else{
-		if (maximo>numero)
+
+		}	
+
+	 	if(contador==0)//primera interacción, ya se calcula el maximo y el minimo
 		{
 
 			maximo = numero;
+			
+			minimo = maximo;
 
 		}	
-		else{
-			if(minimo<numero)
+		else
+			if(numero>maximo)
 			{
 
+				maximo=minimo;
 
-				minimo = numero;
-				
+			}	
+	
+			if(numero<minimo)
+			{
 
-			}		
-
-
-		}
-
-	}	
+				minimo=maximo;
 
 
-document.getElementById('maximo').value = maximo;
-document.getElementById('minimo').value = minimo;
+			}	
+
+		
+		}	
 
 
+alert("El minimoes: "+minmo+"El maximo es: "+maximo);
 }//FIN DE LA FUNCIÓN
