@@ -1,23 +1,25 @@
 function Mostrar()
 {
-//rehacer
+
 	var contador=0;
 	var acumulador=0;
-	var respuesta="si";
+	var respuesta='si';
 	var numero;
 
-	while(respuesta=="si")
+	while(respuesta=="si") 
 	{
 
-
-		contador = contador+1;
-		numero = prompt("Ingrese si");
+		numero = prompt("Ingrese un numero: ");
 		numero = parseInt(numero);
-		respuesta = acumulador+numero;
-
-
+		contador = contador+1;
+		acumulador = acumulador+numero;
+		respuesta = prompt("¿Desea continuar?");			
+		
 	}	
+	
 
+	
+	
 
 
 
