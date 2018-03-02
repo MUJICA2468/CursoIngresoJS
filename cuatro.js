@@ -1,38 +1,59 @@
 function Mostrar()
 {
 
-	var numero_a;
-	var numero_b
 
-	numero_a = prompt("NUMERO A: ");
-	numero_a = parseInt(numero_a);
-	numero_b = prompt("NUMERO B: ");
-	numero_b = parseInt(numero_b);
+	var numeroA;
+	var numeroB;
+	var resultado;
+
+	numeroA = prompt("ingrese numero : ");
+	numeroB = prompt("ingrese numero : ");
 
 
-	if(numero_a==numero_b)
+	if(numeroA == numeroB)
 	{
 
-		document.write(numero_a*numero_b);
+		resultado = numeroA+numeroB;
 
-	}
+
+
+	}	
 	else
 	{
-		if(numero_a>numero_b)
+		if(numeroA < numeroB)
 		{
 
-			document.write(numero_a-numero_b);
+
+			resultado = numeroA*numeroB;
+
 
 		}	
 		else
-		{
+			if(numeroA > numeroB)
+			{
 
-			document.write(numero_a+numero_b);
-
-		}	
+				resultado = numeroA-numeroB;
 
 
-	}
+			}	
+
+
+	if(numeroA==numeroB)		
+	{
+
+
+		resultado = numeroA*numeroB;
+		
+
+
+
+	}	
+	
+
+
+	document.write("Es PAR"+resultado);
+
+
 
 
 }
