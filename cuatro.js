@@ -1,59 +1,40 @@
 function Mostrar()
 {
 
-
 	var numeroA;
 	var numeroB;
-	var resultado;
-
-	numeroA = prompt("ingrese numero : ");
-	numeroB = prompt("ingrese numero : ");
+	var mensaje;
 
 
-	if(numeroA == numeroB)
-	{
+	numeroA = prompt("Ingrese el primer numero");
 
-		resultado = numeroA+numeroB;
+	numeroB = prompt("Ingres el segundo numero");
 
+	if(numeroA == numeroB){
 
+		mensaje = numeroA + numeroB;
 
-	}	
-	else
-	{
-		if(numeroA < numeroB)
-		{
-
-
-			resultado = numeroA*numeroB;
-
-
-		}	
-		else
-			if(numeroA > numeroB)
-			{
-
-				resultado = numeroA-numeroB;
-
-
-			}	
-
-
-	if(numeroA==numeroB)		
-	{
-
-
-		resultado = numeroA*numeroB;
+	}
+	else{
 		
+		numeroA = parseInt(numeroA);
+		numeroB = parseInt(numeroB);
+
+		if(numeroA > numeroB){
+
+			mensaje = numeroA - numeroB;
 
 
+		}
+		else{
 
-	}	
-	
+			mensaje = numeroA * numeroB;s
+
+		}
+	}
 
 
-	document.write("Es PAR"+resultado);
-
-
+	alert(mensaje);
 
 
 }

@@ -1,106 +1,71 @@
 function Mostrar()
 {
 
-	var numeroA; 
-	var numeroB;
-	var numeroC;
-	var mayor;
+	var hora;
 
-	numeroA = prompt("A - Ingrese numero : ");
-	numeroA = parseInt(numeroA);
+	hora = prompt("Ingrese hora : ");
 
-	numeroB = prompt("B - Ingrese numero : ");
-	numeroB = parseInt(numeroB);
- 
-	numeroC = prompt("C - ingrese numero : ");
- 	numeroC = parseInt(numeroC);
+	switch(hora){
 
-	if(numeroA>numeroB||numeroB<numeroA)
-	{
+		case "6":
+		case "7":
+		case "8":
+		case "9":
+		case "10":
+		case "11":
+					alert("Mañana");
+					break;
+		case "12":
+		case "13":
+		case "14":
+		case "15":
+		case "16":
+		case "17":
+		case "18":  
+		case "19":
+		case "20":
+					alert("tarde de mate");
+					break;	
 
-		mayor = numeroA;
+		case "21":
+		case "22":
+		case "23":
+		case "24":
+		case "1":
+		case "2":
+		case "3":
+		case "4":
+		case "5":
+				alert("Es de noche");
+					
+				if(hora < 6){
 
-	}	
-	else{
-		if(numeroA<numeroB||numeroB>numeroA)
-		{
-
-
-			mayor = numeroB;
-
-		}
-		else{
-
-
-			mayor = numeroC	
-
-		}
-	
-	}
-
-	
-
-
-/////
-
-	if(numeroA>numeroC||numeroC<numeroA)
-	{
-
-
-		mayor = numeroA;			
-
-	}	
-	else{
-		if(numeroA<numeroC||numeroC>numeroA)
-		{
-
-
-			mayor = numeroC;
-
-
-
-		}	
-		else{
-
+					alert("Voy a un var");
+				}	
+				break;
 			
 
-			mayor = numeroB;
-
-		}
-
-
-	}
-
+		default:
+				
+					alert("NOP"); 						
+	}				
 	
-/////
 
-	if(numeroB>numeroC||numeroC<numeroB)
-	{
+/*
+	if(hora > 24 || hora < 6){
 
+		alert("Me voy a un var");
 
-		mayor = numeroB;			
-
-	}	
+	}
 	else{
-		if(numeroB<numeroC||numeroC>numeroB)
-		{
+		if(hora < 11 || hora > 6){
 
-
-			mayor = numeroC;
-
-
-
-		}	
-		else{
-
-			
-			mayor = numeroA;
-
+			alert("A desayunar");
 
 		}
 
-
 	}
 
-	alert(mayor);
+*/
+
 }
